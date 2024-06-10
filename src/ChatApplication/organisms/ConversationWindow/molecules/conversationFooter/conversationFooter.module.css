@@ -1,36 +1,32 @@
-.chatFooter {
-  position: fixed;
-  bottom: 0;
-  /* left: 34.5%; */
-  width: 80%;
-  background-color: #f0f0f0;
-  padding: 10px;
-  box-sizing: border-box;
+.footer {
   display: flex;
   align-items: center;
-}
-
-.chatFooter input {
-  flex: 1; /* Input takes up remaining space */
   padding: 10px;
-  margin-right: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.messageInput {
+  flex: 1;
+  padding: 10px;
   border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
-.chatFooter .sendIcon {
+.sendButton {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 24px;
-  color: #0056b3;
 }
 
-.chatFooter .sendIcon:hover {
-  color: #4ad06e;
-}
-
-/* Media query for smaller screen sizes */
-@media (max-width: 768px) {
-  .chatFooter {
-    left: 0; /* Aligns footer to the left */
-    width: 100%; /* Makes footer take up full width */
-  }
+.sendButton:hover {
+  background-color: #45a049;
 }

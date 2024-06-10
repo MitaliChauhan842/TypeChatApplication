@@ -23,7 +23,6 @@ const ConversationWindow = ({
     const filteredData = _head(
       _filter(chatData, (chat) => chat.id === selectedChatId)
     );
-    console.log("---->>>", filteredData);
     setSelectedChatDetails(filteredData);
   }, [selectedChatId, chatData]);
   return (

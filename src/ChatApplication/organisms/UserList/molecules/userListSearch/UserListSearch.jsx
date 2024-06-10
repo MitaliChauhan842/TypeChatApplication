@@ -24,7 +24,6 @@ const UserListSearch = ({
   userdata,
   height,
 }) => {
-  console.log("hhh", height);
   const handleSearch = useCallback(
     (event) => {
       const { value } = event.target;
@@ -34,11 +33,11 @@ const UserListSearch = ({
         return;
       }
       const filtered = _filter(userdata, (user) =>
-        _includes(_toLower(user.name), _toLower(value))
+        _includes(_toLower(user.name), _toLower(value)),
       );
       setFilteredUsers(filtered);
     },
-    [setSearchText, setFilteredUsers, userdata]
+    [setSearchText, setFilteredUsers, userdata],
   );
 
   return (

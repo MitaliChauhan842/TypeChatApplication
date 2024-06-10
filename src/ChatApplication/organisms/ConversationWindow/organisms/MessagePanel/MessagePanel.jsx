@@ -21,7 +21,6 @@ const MessagePanel = ({
   userdata,
   chatData,
 }) => {
-  console.log("chatDta", chatData);
   const [messageInput, setMessageInput] = useState("");
   const conversationPageContainerStyles = useMemo(() => ({ height }), [height]);
   return (
@@ -38,6 +37,7 @@ const MessagePanel = ({
             setChatData={setChatData}
             selectedChatDetails={selectedChatDetails}
             chatData={chatData}
+            height={height}
           />
           <ConversationFooter
             messageInput={messageInput}

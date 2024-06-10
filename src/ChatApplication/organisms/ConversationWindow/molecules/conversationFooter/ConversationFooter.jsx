@@ -23,8 +23,8 @@ const ConversationFooter = ({
         _map(prevChats, (chat) =>
           chat.id === selectedChatId
             ? { ...chat, messages: [...chat.messages, newMessage] }
-            : chat
-        )
+            : chat,
+        ),
       );
       setMessageInput("");
     }
@@ -37,20 +37,21 @@ const ConversationFooter = ({
       content: messageInput,
       timestamp: new Date().toISOString(),
     }),
-    [messageInput]
+    [messageInput],
   );
 
   return (
-    <div className={styles.chatFooter}>
+    <div className={styles.footer}>
       <input
         type="text"
         value={messageInput}
+        className={styles.messageInput}
         onChange={(e) => setMessageInput(e.target.value)}
         placeholder="Type a message"
       />
       <BsArrowRightCircleFill
         onClick={handleSendMessage}
-        className={styles.sendIcon}
+        className={styles.sendButton}
       />
     </div>
   );

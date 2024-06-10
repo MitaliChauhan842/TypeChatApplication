@@ -30,6 +30,7 @@ const ChatContent = ({
   userdata,
   setChatData,
   selectedChatId,
+  height,
 }) => {
   const [replyInput, setReplyInput] = useState("");
   const [replyingToMessageId, setReplyingToMessageId] = useState(null);
@@ -76,8 +77,8 @@ const ChatContent = ({
                 ...chat,
                 messages: addReplyToMessage(chat.messages, messageId, newReply),
               }
-            : chat
-        )
+            : chat,
+        ),
       );
       setReplyInput("");
       setReplyingToMessageId(null);
@@ -169,7 +170,7 @@ const ChatContent = ({
     };
   }, [userdata, setChatData, selectedChatId, replyInput, replyingToMessageId]);
   return (
-    <div className={styles.chatContent}>
+    <div className={styles.chatContent} style={{ height: height }}>
       {renderMessages(selectedChatDetails?.messages || EMPTY_ARRAY)}
     </div>
   );
