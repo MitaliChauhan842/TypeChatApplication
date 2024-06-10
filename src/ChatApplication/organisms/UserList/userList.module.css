@@ -1,0 +1,6 @@
+.userListContainer {
+  width: 20%;
+  height: 100%;
+  min-width: 20rem;
+  border-right: 1px solid #ddd;
+}

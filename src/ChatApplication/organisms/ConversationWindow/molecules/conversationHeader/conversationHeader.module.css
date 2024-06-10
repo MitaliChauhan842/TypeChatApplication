@@ -1,0 +1,23 @@
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 10px;
+  margin-right: 1.2rem;
+  border-radius: 50%;
+}
+
+.chatHeader {
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 1.6rem 1.6rem 1.6rem 2.4rem;
+  background-color: #d9d9d9;
+}
+
+.headerText {
+  margin-left: 10px;
+}

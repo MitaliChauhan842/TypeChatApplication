@@ -1,0 +1,9 @@
+.chatContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.chatContainer::-webkit-scrollbar {
+  display: none;
+}

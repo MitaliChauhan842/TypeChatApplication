@@ -1,0 +1,87 @@
+.chat-content {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-left: 0;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+.message.lightgreen {
+  background-color: rgb(212, 240, 212);
+}
+
+.messageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.messageUserInfo {
+  display: flex;
+  align-items: center;
+}
+
+.messageUserInfo .avatar {
+  margin-right: 5px;
+}
+
+.messageTime {
+  font-size: 0.8rem;
+}
+
+.messageText {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.messageOptions {
+  display: flex;
+  justify-content: space-between;
+}
+.replyInput {
+  margin-top: 10px;
+  display: flex;
+}
+
+.replyTextInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.replyButtons {
+  display: flex;
+}
+
+.replyButtons button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  border-radius: 4px;
+}
+
+.sendButton {
+  background-color: #4395ed;
+  color: #fff;
+}
+
+.cancelButton {
+  background-color: #ed3c4e;
+  color: #fff;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
